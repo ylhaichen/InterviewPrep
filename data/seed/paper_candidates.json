@@ -1,0 +1,122 @@
+[
+  {
+    "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+    "authors": ["Anthony Brohan", "Noah Brown", "Kyle Luu", "et al."],
+    "abstract": "RT-2 casts robotic control as a vision-language-action sequence modeling problem and shows that web-scale vision-language pretraining can improve instruction following and semantic generalization for real robot manipulation.",
+    "source": "arxiv",
+    "source_url": "https://arxiv.org/abs/2307.15818",
+    "pdf_url": "https://arxiv.org/pdf/2307.15818.pdf",
+    "published_date": "2023-07-28",
+    "collected_date": "2026-05-06",
+    "topic_tags": ["VLA", "Robot Foundation Model", "Embodied Intelligence"],
+    "raw_relevance_notes": "Landmark VLA paper for mapping image + language + state to action tokens and interview-level discussion on semantic transfer."
+  },
+  {
+    "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+    "authors": ["Open X-Embodiment Collaboration"],
+    "abstract": "Open X-Embodiment introduces a large multi-robot dataset and RT-X models for cross-embodiment transfer, highlighting the role of shared representations and data standardization in generalist manipulation.",
+    "source": "arxiv",
+    "source_url": "https://arxiv.org/abs/2310.08864",
+    "pdf_url": "https://arxiv.org/pdf/2310.08864.pdf",
+    "published_date": "2023-10-13",
+    "collected_date": "2026-05-06",
+    "topic_tags": ["VLA", "Embodied Intelligence", "Dataset"],
+    "raw_relevance_notes": "Core for cross-robot generalization, dataset governance, and system-level interview questions."
+  },
+  {
+    "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+    "authors": ["Cheng Chi", "Zhenjia Xu", "Sicong Leng", "et al."],
+    "abstract": "Diffusion Policy models multimodal robot actions with conditional denoising, enabling robust behavior cloning and high success rates in manipulation tasks with action chunking and receding horizon control.",
+    "source": "arxiv",
+    "source_url": "https://arxiv.org/abs/2303.04137",
+    "pdf_url": "https://arxiv.org/pdf/2303.04137.pdf",
+    "published_date": "2023-03-07",
+    "collected_date": "2026-05-06",
+    "topic_tags": ["Diffusion Policy", "Action Chunking", "Robotics"],
+    "raw_relevance_notes": "Directly relevant to action representation, latency, and failure analysis in robot policy interviews."
+  },
+  {
+    "title": "DreamerV3: Mastering Diverse Domains through World Models",
+    "authors": ["Danijar Hafner", "Jonnathan Ho", "Tim Salimans", "et al."],
+    "abstract": "DreamerV3 improves latent world model training and policy optimization for broad-domain reinforcement learning, offering a strong blueprint for model-based control and representation learning.",
+    "source": "arxiv",
+    "source_url": "https://arxiv.org/abs/2301.04104",
+    "pdf_url": "https://arxiv.org/pdf/2301.04104.pdf",
+    "published_date": "2023-01-10",
+    "collected_date": "2026-05-06",
+    "topic_tags": ["World Model", "RL", "Embodied Intelligence"],
+    "raw_relevance_notes": "Foundational world model design with strong interview value on latent dynamics and planning tradeoffs."
+  },
+  {
+    "title": "A World Action Model for Embodied Planning with Latent Control Tokens",
+    "authors": ["Seeded Research Note"],
+    "abstract": "This seed paper entry represents the class of world action model research that learns action-conditioned latent transitions and supports planning with executable control abstractions.",
+    "source": "other",
+    "source_url": "https://example.com/world-action-model-seed",
+    "pdf_url": null,
+    "published_date": "2025-11-02",
+    "collected_date": "2026-05-06",
+    "topic_tags": ["World Action Model", "Embodied Intelligence", "Planning"],
+    "raw_relevance_notes": "Useful for practicing design reasoning around latent action planning even when no official PDF is available yet."
+  },
+  {
+    "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+    "authors": ["Rafael Rafailov", "Archit Sharma", "Eric Mitchell", "et al."],
+    "abstract": "DPO introduces a simple objective for preference optimization without explicit RL rollouts, deriving a stable update from chosen-rejected preference pairs relative to a reference model.",
+    "source": "arxiv",
+    "source_url": "https://arxiv.org/abs/2305.18290",
+    "pdf_url": "https://arxiv.org/pdf/2305.18290.pdf",
+    "published_date": "2023-05-29",
+    "collected_date": "2026-05-06",
+    "topic_tags": ["DPO", "RL Post-training", "Preference Optimization"],
+    "raw_relevance_notes": "Must-know alignment baseline for comparing PPO/GRPO style post-training pipelines."
+  },
+  {
+    "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+    "authors": ["DeepSeek-AI"],
+    "abstract": "DeepSeekMath reports strong mathematical reasoning gains through data curation and RL-style optimization, popularizing GRPO-style training discussions in open post-training workflows.",
+    "source": "arxiv",
+    "source_url": "https://arxiv.org/abs/2402.03300",
+    "pdf_url": "https://arxiv.org/pdf/2402.03300.pdf",
+    "published_date": "2024-02-05",
+    "collected_date": "2026-05-06",
+    "topic_tags": ["GRPO", "RL Post-training", "Reasoning LLM"],
+    "raw_relevance_notes": "High interview value for practical RL post-training choices and verifier-driven reasoning loops."
+  },
+  {
+    "title": "Process Supervision Improves Reasoning in Large Language Models",
+    "authors": ["OpenAI"],
+    "abstract": "Process supervision demonstrates that scoring intermediate reasoning steps can improve reliability compared to outcome-only supervision, motivating PRM-style reward design.",
+    "source": "other",
+    "source_url": "https://openai.com/research/process-supervision",
+    "pdf_url": null,
+    "published_date": "2023-05-31",
+    "collected_date": "2026-05-06",
+    "topic_tags": ["Process Reward Model", "Reasoning LLM", "Verifier"],
+    "raw_relevance_notes": "Critical conceptual bridge between PRM, ORM, and verifier-based post-training discussions."
+  },
+  {
+    "title": "PaLM-E: An Embodied Multimodal Language Model",
+    "authors": ["Danny Driess", "Fei Xia", "Mehdi S. M. Sajjadi", "et al."],
+    "abstract": "PaLM-E fuses language, vision, and robot sensor data into a multimodal embodied language model, enabling transfer across robotic and language tasks.",
+    "source": "arxiv",
+    "source_url": "https://arxiv.org/abs/2303.03378",
+    "pdf_url": "https://arxiv.org/pdf/2303.03378.pdf",
+    "published_date": "2023-03-06",
+    "collected_date": "2026-05-06",
+    "topic_tags": ["VLA", "Embodied Intelligence", "Multimodal"],
+    "raw_relevance_notes": "Important for interview questions on multimodal fusion and embodied transfer."
+  },
+  {
+    "title": "OpenVLA: An Open Foundation Model for Vision-Language-Action Robotics",
+    "authors": ["OpenVLA Team"],
+    "abstract": "OpenVLA provides an open VLA baseline for instruction-conditioned manipulation with reproducible training recipes and benchmarking protocols.",
+    "source": "github",
+    "source_url": "https://github.com/openvla/openvla",
+    "pdf_url": null,
+    "published_date": "2024-06-01",
+    "collected_date": "2026-05-06",
+    "topic_tags": ["VLA", "Open Source", "Robot Foundation Model"],
+    "raw_relevance_notes": "Useful for paper-to-implementation mapping and system design interview practice."
+  }
+]

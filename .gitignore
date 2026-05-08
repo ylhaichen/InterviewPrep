@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+coverage
+playwright-report
+test-results
+pnpm-lock.yaml
+*.log
+.DS_Store
+.env
+.env.local
+data/embodied-research.db
+__pycache__/
+scripts/__pycache__/

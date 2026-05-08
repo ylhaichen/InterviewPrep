@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 216 40% 11%;
+  --foreground: 216 30% 96%;
+  --surface: 215 32% 20%;
+  --card: 216 30% 16%;
+  --border: 214 26% 32%;
+  --muted: 214 20% 28%;
+  --primary: 195 92% 62%;
+  --secondary: 257 93% 72%;
+  --accent: 186 90% 60%;
+  --success: 160 84% 39%;
+  --warning: 38 92% 50%;
+  --danger: 0 84% 60%;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground font-sans antialiased;
+  min-height: 100vh;
+  font-feature-settings: "ss01" 1, "ss03" 1, "cv02" 1;
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(56, 189, 248, 0.34), transparent 42%),
+    radial-gradient(circle at 84% 18%, rgba(139, 92, 246, 0.26), transparent 40%),
+    radial-gradient(circle at 50% 112%, rgba(34, 211, 238, 0.2), transparent 54%),
+    linear-gradient(180deg, #0d1627 0%, #12203a 48%, #101f37 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle at 1px 1px, rgba(203, 213, 225, 0.16) 1px, transparent 0);
+  background-size: 22px 22px;
+  opacity: 0.26;
+  z-index: -1;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 14px 32px rgba(5, 10, 24, 0.26);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Space Grotesk Variable", "Manrope Variable", system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: rgba(148, 163, 184, 0.08);
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.45);
+  border-radius: 9999px;
+}
